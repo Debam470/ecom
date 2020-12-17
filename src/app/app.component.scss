@@ -1,0 +1,10 @@
+
+.app-component-main-section {
+    ::ng-deep .mat-radio-outer-circle {
+        border-radius: 0px !important;
+    }
+    
+    .blah-blah {
+        border: 1px solid black;
+    }
+}
