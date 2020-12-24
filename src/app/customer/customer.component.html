@@ -1,0 +1,71 @@
+<section>
+    <mat-toolbar class="brand-2 header-menu-component-wrapper-left">
+        <div class="flex-1 jc-center flex-center-align">
+            <div class="flex-1 jc-center flex-center-align">
+                <img id="login-icon" class="flex-center-align" src="./assets/images/login.png">
+                <button mat-button>{{customerData.signin}}</button>
+            </div>
+            <div class="flex-1 jc-center flex-center-align">
+                <button mat-button>{{customerData.register}}</button>
+            </div>
+            <div class="flex-1 jc-center flex-center-align">
+                <mat-icon id="search-icon" class="flex-center-align">search</mat-icon>
+                <button mat-button (click)= "search()" >{{customerData.search}}</button>
+            </div>
+        </div>
+        <div class="flex-1 jc-center flex-center-align">
+            <img class="flex-center-align md-flex-center" alt="DRESSUP" src="./assets/images/logo.png">
+        </div>
+        <div class="flex-1 jc-center flex-center-align">
+            <div class="flex-1 disp-flex">
+                <div class="flex-1 jc-center flex-center-align">
+                    <mat-icon>card_giftcard</mat-icon>
+                </div>
+                <div class="flex-1 jc-center flex-center-align">
+                    <mat-icon>shopping_cart</mat-icon>
+                </div>
+                <div class="flex-1 jc-center flex-center-align disp-flex">
+                    <div class="flex-1 jc-center flex-center-align">
+                        <mat-icon class="person">person</mat-icon>
+                    </div>
+                    <div class="flex-2 disp-flex flex-col greet-name">
+                        <div class="flex-1 fs-14 jc-center flex-center-align">
+                            {{customerData.greet}}
+                        </div>
+                        <div class="flex-1 fs-12 jc-center flex-center-align customerName">
+                            {{customerData.customerName}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-toolbar>
+
+    <mat-toolbar class=" brand-2 sub-header-navbar disp-flex">
+        <div class="flex-1 md-flex-center flex-center-align sub-header-navbar-list">
+            <button mat-button [matMenuTriggerFor]="menutheHolidayShop">THE HOLIDAY SHOP</button>
+            <mat-menu #menutheHolidayShop="matMenu" class="disp-flex" >
+                <button mat-menu-item *ngFor="let i of theHolidayShop">{{i}}</button>
+            </mat-menu>
+        </div>
+        <div class="flex-1 md-flex-center flex-center-align sub-header-navbar-list">
+            <button mat-button [matMenuTriggerFor]="menunewArrivals">NEW ARRIVALS</button>
+            <mat-menu #menunewArrivals="matMenu" class="disp-flex">
+                <button mat-menu-item *ngFor="let j of newArrivals" >{{j}}</button>
+            </mat-menu>
+        </div>
+        <div class="flex-1 md-flex-center flex-center-align sub-header-navbar-list">
+            <button mat-button [matMenuTriggerFor]="menuclothings">CLOTHINGS</button>
+            <mat-menu #menuclothings="matMenu" class="disp-flex">
+                <button mat-menu-item *ngFor="let k of clothings" >{{k}}</button>
+            </mat-menu>
+        </div>
+        <div class="flex-1 md-flex-center flex-center-align">
+            <button mat-button [matMenuTriggerFor]="menumore">MORE</button>
+            <mat-menu #menumore="matMenu" class="disp-flex">
+                <button mat-menu-item *ngFor="let l of more" >{{l}}</button>
+            </mat-menu>
+        </div>
+    </mat-toolbar>
+    <app-body></app-body>
+</section>
