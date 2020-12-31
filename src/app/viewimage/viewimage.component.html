@@ -1,1 +1,101 @@
-<p>viewimage works!</p>
+<section class="view-image-wrapper">
+    <mat-toolbar class="viewimage disp-flex ML80">
+        <div class="flex-1">
+            <img class="girl-img MT10 PL5" src="./assets/images/girl.png">
+        </div>
+        <div class="flex-2 flex-col">
+            <div class="flex-row">
+                <div class="flex-1 M10 image-content flex-col">
+                    <div class="HT100 heading disp-flex jc-center md-flex-center">
+                        {{contentData.heading1}}
+                    </div>
+                    <div class="HT100 content ta-center">
+                        {{contentData.content1}}
+                    </div>
+                    <div class="HT100 disp-flex jc-center md-flex-center">
+                        <button mat-button class="button">{{contentData.button1}}</button>
+                    </div>
+                </div>
+                <div class="flex-1 M10 image-content">
+                    <img class="top-sweater P10 ML10" src="./assets/images/top.png">
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-1 M10 image-content">
+                    <img class="top-sweater P10 ML10" src="./assets/images/sweater.png">
+                </div>
+                <div class="flex-1 M10 image-content flex-col">
+                    <div class="HT100 heading disp-flex jc-center md-flex-center">
+                        {{contentData.heading2}}
+                    </div>
+                    <div class="HT100 content ta-center">
+                        {{contentData.content2}}
+                    </div>
+                    <div class="HT100 disp-flex jc-center md-flex-center">
+                        <button mat-button class="button">{{contentData.button2}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-toolbar>
+
+    <mat-toolbar class="description brand-2 MT20">
+        <div class="description-content flex-col">
+            <div class=" PT30 heading disp-flex jc-center md-flex-center">
+                Shop Trendy Clothing & Accessories at Dress Up - An Online Dress Boutique
+            </div>
+            <div class="PT30 content ta-center">
+                DRESS UP IS A WOMEN'S CLOTHING BOUTIQUE CARRYING A VARIETY OF FITS, STYLES, AND PATTERNS FOR WOMEN OF
+                ALL AGES, SHAPES, AND SIZES. WE OFFER A DIVERSE COLLECTION OF NEW PRODUCTS EVERY SINGLE WEEK, INCLUDING
+                YOUR FAVORITE CLOTHING ITEMS: CUTE ROMPERS, MAXI DRESSES, KNIT SWEATERS, OVERSIZED TOPS, AND LIGHTWEIGHT
+                CARDIGANS, AS WELL AS TRENDY SHOES, ACCESSORIES, JEWELRY, ACTIVEWEAR, LOUNGEWEAR, AND SO MUCH MORE.
+                DRESS UP'S TRENDY, YET WEARABLE CLOTHES WILL HAVE YOU FEELING LIKE YOUR BEST SELF, NO MATTER WHERE
+                YOU'RE HEADED. YOU CAN SHOP WITH US ONLINE OR AT ANY OF OUR RETAIL LOCATIONS ACROSS THE SOUTHEAST,
+                INCLUDING STORES IN GEORGIA, ALABAMA, SOUTH CAROLINA, AND TENNESSEE. GET FREE SHIPPING ON ALL ORDERS
+                OVER $49, AND FEEL FREE TO REACH OUT TO US AT 678.989.2006 WITH ANY QUESTIONS. DON'T MISS OUT - COME SEE
+                WHY DRESS UP IS ONE OF THE FASTEST GROWING ONLINE DRESS BOUTIQUES IN THE UNITED STATES!
+            </div>
+            <div class="PT30 disp-flex jc-center md-flex-center">
+                <button mat-button class="button">SHOP OUR LATEST ARRIVALS</button>
+            </div>
+        </div>
+    </mat-toolbar>
+
+    <mat-toolbar class="new-product disp-flex jc-center brand-2 MT20">
+        <div class="new-product-heading ta-center">
+            NEW PRODUCTS
+        </div>
+    </mat-toolbar>
+
+    <mat-toolbar class="image-wrapper flex-row jc-center brand-2 MB80">
+      <div class="flex-1">
+        <img class=" ML30 new-arrivals-images MT20" src="./assets/images/girl1.png">
+      </div>
+      <div class="flex-1">
+        <img class=" ML30 new-arrivals-images MT20" src="./assets/images/girl2.png">
+      </div>
+      <div class="flex-1">
+        <img class=" ML30 new-arrivals-images MT20" src="./assets/images/girl3.png">
+      </div>
+      <div class="flex-1">
+        <img class=" ML30 new-arrivals-images MT20" src="./assets/images/girl4.png">
+      </div>
+    </mat-toolbar>
+
+    <mat-toolbar class="subscribe flex-row jc-center brand-2 MB50">
+        <div class="flex-1 ta-center fs-12 subscribe-text">
+            SUBSCRIBE TO OUR NEWSLETTER
+        </div>
+        <div class="flex-2 ta-center fs-12 subscribe-text">
+            Get the latest updates on new products and upcoming sales
+        </div>
+        <div class="flex-2 flex-row subscribe-email-wrapper MR25">
+            <div class="flex-3 subscribe-email ta-center fs-12">
+                Your email address
+            </div>
+            <div class="flex-2 subscribe-email ta-center fs-14 tc-6">
+                <button mat-button class="email-button">SUBSCRIBE</button>
+            </div>
+        </div>
+    </mat-toolbar>
+</section>

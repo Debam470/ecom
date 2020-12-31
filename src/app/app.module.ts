@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { CustomerComponent } from './customer/customer.component';
 import { BodyComponent } from './body/body.component';
 import { ViewimageComponent } from './viewimage/viewimage.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ViewimageComponent } from './viewimage/viewimage.component';
     HeaderComponent,
     CustomerComponent,
     BodyComponent,
-    ViewimageComponent
+    ViewimageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
