@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,6 +10,9 @@ import { CustomerComponent } from './customer/customer.component';
 import { BodyComponent } from './body/body.component';
 import { ViewimageComponent } from './viewimage/viewimage.component';
 import { FooterComponent } from './footer/footer.component';
+import { SigninComponent } from './customer/signin/signin.component';
+import { CreateaccountComponent } from './customer/createaccount/createaccount.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,10 @@ import { FooterComponent } from './footer/footer.component';
     CustomerComponent,
     BodyComponent,
     ViewimageComponent,
-    FooterComponent
+    FooterComponent,
+    SigninComponent,
+    CreateaccountComponent,
+    
   ],
   imports: [
     BrowserModule,

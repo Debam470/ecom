@@ -3,7 +3,9 @@
         <div class="flex-1 jc-center flex-center-align">
             <div class="flex-1 jc-center flex-center-align">
                 <img id="login-icon" class="flex-center-align" src="./assets/images/login.png">
-                <button mat-button>{{customerData.signin}}</button>
+                <button mat-button 
+                routerLink="/signin" 
+                routerLinkActive="active">{{customerData.signin}}</button>
             </div>
             <div class="flex-1 jc-center flex-center-align">
                 <button mat-button>{{customerData.register}}</button>
@@ -67,5 +69,6 @@
             </mat-menu>
         </div>
     </mat-toolbar>
+    
     <app-body></app-body>
 </section>
