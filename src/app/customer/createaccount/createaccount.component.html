@@ -1,1 +1,100 @@
-<p>createaccount works!</p>
+<ng-template #wrapper let-data>
+    <section class="create-account-wrapper">
+        <h2 mat-dialog-title class="ta-center fs-14">{{createAccountData.header}}</h2>
+        <div class="create-account-form flex-row">
+            <div class="flex-1">
+                <div class="form-headers fs-12 MT5">
+                    {{createAccountData.email}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                    {{createAccountData.confirmPassword}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                   {{ createAccountData.firstName}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                   {{ createAccountData.companyName}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                    {{createAccountData.addressLine1}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                   {{ createAccountData.city}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                    {{createAccountData.state}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                
+            </div>
+            <div class="flex-1 ML30">
+                <div class="form-headers fs-12 MT5">
+                    {{createAccountData.password}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                   {{ createAccountData.birthMonth}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                    {{createAccountData.lastaName}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                   {{ createAccountData.phoneNumber}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                    {{createAccountData.addressLine2}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                    {{createAccountData.country}} 
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+                <div class="form-headers fs-12 MT5">
+                    {{createAccountData.zipCode}}
+                </div>
+                <mat-form-field class="email-input MT7" appearance="fill">
+                    <input matInput class="input"> 
+                </mat-form-field>
+            </div>
+        </div>
+        <mat-dialog-actions>
+            <button mat-button (click)="onCancel()">Cancel</button>
+        </mat-dialog-actions>
+    </section>
+        
+</ng-template>
